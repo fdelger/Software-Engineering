@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaflet - Santa Cruz</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.3/leaflet.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://rawgit.com/Leaflet/Leaflet.draw/master/src/leaflet.draw.css"/>
+    
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/Leaflet.draw.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/Leaflet.Draw.Event.js"></script>
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/Edit.Poly.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/Edit.Circle.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/Edit.Rectangle.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/Edit.Marker.js"></script>
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Feature.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Polyline.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Polygon.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Rectangle.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Circle.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/handler/Draw.Marker.js"></script>
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/TouchEvents.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/LatLngUtil.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/GeometryUtil.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/LineUtil.Intersect.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/Polyline.Intersect.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/ext/Polygon.Intersect.js"></script>
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/Control.Draw.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/Tooltip.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/Toolbar.js"></script>
+    
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/draw/DrawToolbar.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/EditToolbar.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.draw/master/src/edit/handler/EditToolbar.Delete.js"></script>
+
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <a href='#' id='export'>Download</a>
+    <script>
+	function init() {
+        var map = loadMap();
+        drawToolbar(map);
+
+
+      
+      
+    
+ 
+      }
+    
+
+    </script>
+    
+  </head>
+  <style>
+      html, body, #map { width:100%; height:100%; margin:0; padding:0; }
+      </style>
+  <body onload="init()">
+    <div id="map"></div>
+    
+    
+    
+    <div id="result"></div>
+    <div id="show"></div>
+  </body>
+</html>
